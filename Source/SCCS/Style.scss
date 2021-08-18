@@ -1,0 +1,182 @@
+@import "NullStyle.sccs";
+@import "FontFace.sccs";
+
+%gradient{
+	background: rgb(252,236,252); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 50%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(253,137,215,1) 51%,rgba(255,124,216,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(253,137,215,1) 51%,rgba(255,124,216,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+body{
+	background: url("../img/kosmo.jpg")center no-repeat fixed;
+	//background-color: yellow;
+	position: relative;
+}
+.header{
+	background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    		.header_menu{    			
+    			.header-menu_list{
+    				display: flex;
+    				justify-content: flex-end;
+    			    .header-menu_link{	
+    					padding: 13px 20px;
+                        opacity: 0.8;
+                        color: #F5F5F7;
+                        font-size: 14px;
+                        line-height: 40px;                       
+                            &:hover{
+                        	background-color: gray;
+                }
+    			
+    		}
+
+    	}
+    }
+}
+
+
+h1{
+    margin: 40px 0 0 0;
+	text-align: center;
+	@extend %gradient;
+	padding: 10px;
+	font-size: 40px;
+	font-family: Parizhel;
+	letter-spacing: 3px;
+	color: purple;
+}
+h2{
+	position: sticky;
+	top: 0;
+	margin: 0px auto;
+	text-align: center;
+	@extend %gradient;
+	padding: 10px;
+	font-size: 40px;
+	font-family: Parizhel;
+	letter-spacing: 3px;
+	color: purple;
+	
+}
+.name{
+	color: white;
+	border-left: 5px solid #000;
+	margin: 10px;
+	font-family: NotoSans-Regular;
+	font-size: 24px;
+		p{
+			margin: 10px;
+		}
+		input{
+			margin: 10px;
+		}
+		.pole{
+			width: 200px;
+			height: 40px;
+			border-radius: 15px;
+			font-size: 24px;
+			&:focus{
+				box-shadow: 0 0 20px purple;
+			}
+		}
+		textarea{
+			margin: 10px;
+			border-radius: 15px;
+		}
+		.knopka{
+			margin: 10px;
+			height: 50px;
+			width: 200px;
+			text-transform: uppercase;
+			border-radius: 25px;
+			border: 2px solid #000;
+			color: gold;
+			background-color: rgba(255,255,255,0.01);
+			font-size: 18px;
+			&:hover{
+				background-color: purple;
+			}
+			&:active{
+				background-color: gray;
+			}
+		}
+		.line{
+			margin: 10px;
+			background-color: purple;
+			color: gold;
+			font-size: 18px;
+
+		}
+	}
+.prop{
+    font-style: italic;
+	font-size: 28px;
+	color: white;
+	margin: 30px;
+		}
+.prop2{
+	font-style: italic;
+	font-size: 28px;
+	color: white;
+	margin: 2px;
+}
+.end{
+	font-size: 40px;
+	text-align: center;
+	font-family: Parizhel;
+    padding: 10px;
+    @extend %gradient;
+    color: purple;
+}
+.shine{
+	border: 5px solid red;
+	max-width: 800px;
+	margin: 0px auto;
+	height: 800px;
+	font-family: NotoSans-Regular;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 700;
+	//position: relative;
+
+	.shine__1{
+		font-size: 24px;
+		background-color: white;
+	}
+	.shine__2{
+		font-size: 24px;
+		background-color: pink;
+	}
+	.shine__3{
+		font-size: 24px;
+		background-color: darkred;
+		&:after{
+			content: '';
+			position: absolute;
+			width: 100px;
+			bottom: 0;
+			height: 1px;
+			left: 50%;
+			background-color: #000;
+			margin: 0 0 0 -25px;
+		}
+	}
+}
+.diz{
+	font-size: 24px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #000;
+	margin: 30px;
+	line-height: 30px;
+	padding: 20px;
+	color: gold;
+}
+
+

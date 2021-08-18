@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Parizhel';
+	font-display: swap;
+	src: url("../fonts/Parizhel.eot");
+	src: local("O"), url("../fonts/Parizhel.woff") format("woff"), 
+			url("../fonts/Parizhel.ttf") format("truetype"), 
+			url("../fonts/Parizhel.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NotoSans-Regular';
+	font-display: swap;
+	src: url("../fonts/NotoSans-Regular.eot");
+	src: local("O"), url("../fonts/NotoSans-Regular.woff") format("woff"), 
+			url("../fonts/NotoSans-Regular.ttf") format("truetype"), 
+			url("../fonts/NotoSans-Regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
